@@ -18,6 +18,9 @@
         integrity="sha512-EvFBzDO3WBynQTyPJI+wLCiV0DFXzOazn6aoy/bGjuIhGCZFh8ObhV/nVgDgL0HZYC34D89REh6DOfeJEWMwgg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+
+
     <title>Recipes</title>
 
     <style>
@@ -78,15 +81,43 @@
         body {
             font-size: 1.6rem;
             font-family: var(--font-primary);
+            background: var(--color-gray-1);
+
         }
 
         .container {
             max-width: 144rem;
             margin: 0 auto;
+            padding: 4rem;
         }
 
         .main-header-container {
             background-color: black;
+        }
+
+        .main-logo {
+            font-size: 4rem;
+            color: var(--color-white);
+            text-decoration: none;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            margin: 0 auto;
+
+        }
+
+        .main-logo-icon {
+            margin-right: 2rem;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: var(--font-headings);
         }
     </style>
 
