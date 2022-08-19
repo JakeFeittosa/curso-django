@@ -19,6 +19,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
 
 
     <title>Recipes</title>
@@ -118,6 +123,49 @@
         h4,
         h5 {
             font-family: var(--font-headings);
+        }
+
+        .search-form {
+            border: .2rem solid var(--color-primary-dark);
+            max-width: 64rem;
+            margin: 0 auto;
+            border-radius: .4rem;
+            position: relative;
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-input,
+        .search-button {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 1rem;
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-input {
+            width: 100%;
+            padding-right: 3rem;
+        }
+
+        .search-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .search-button:focus {
+            outline: 1px solid var(--color-primary);
+            background: rgba(0, 0, 0, .20)
+        }
+
+        .search-form:focus-within {
+            border-color: var(--color-primary);
+            background: var(--color-white);
+        }
+
+        .search-form:focus-within .search-button {
+            color: var(--color-primary);
         }
     </style>
 
