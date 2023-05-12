@@ -56,7 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'base_templates',
+            BASE_DIR / 'recipes',
 
         ],
         'APP_DIRS': True,
@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / 'base_static',
+    BASE_DIR / 'recipes/static/recipes',
 ]
 STATIC_ROOT = BASE_DIR / 'static'
 
