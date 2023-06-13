@@ -6,9 +6,29 @@
 {% block content %}
 <div class="main-content main-content-list container">
 
+<<<<<<< HEAD
     {% for recipe in recipes %}
         {% include 'recipes/partials/recipe.html' %}
     {% endfor %}
     
 </div>
 {% endblock content %}
+=======
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+        {% include 'recipes/partials/recipe.html' %}
+        {% include 'recipes/partials/recipe.html' %}
+        {% include 'recipes/partials/recipe.html' %}
+        {% include 'recipes/partials/recipe.html' %}
+        {% include 'recipes/partials/recipe.html' %}
+        {% include 'recipes/partials/recipe.html' %}
+        </div>
+   </main>
+
+   {% include 'recipes/partials/footer.html' %}
+
+
+</body>
+
+</html>
+>>>>>>> 660445de139a4902537fed561b2a156d5b7c61f7
